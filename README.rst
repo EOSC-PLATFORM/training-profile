@@ -1,8 +1,7 @@
-EOSC-Profiles for PROVIDER
+EOSC-Profiles for TRAINING
 ==========================
 
-Providers are the organisations responsible for ''providing'' any of the other kinds of resources, 
-and the Provider Profile details the data required to describe each Provider.
+Place holder text
 
 
 Accompanying artefacts
