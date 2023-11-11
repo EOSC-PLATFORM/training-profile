@@ -40,7 +40,7 @@ Provider
 ############
 
 .. list-table:: EOSC Provider Profile Elements of "Marketing" block
-   :widths: 30 50 20
+   :widths: 25 50 10
    :header-rows: 1
 
    * - Element name
