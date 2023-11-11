@@ -11,7 +11,7 @@ Training
 ########
 
         
-.. list-table:: EOSC Service Profile Elements of "Basic" block
+.. list-table:: EOSC Training Profile Elements of "Basic" block
    :widths: 25 50 10 10 10
    :header-rows: 1
 
@@ -56,7 +56,7 @@ Training
 ########
 
         
-.. list-table:: EOSC Service Profile Elements of "Detailed and Access" block
+.. list-table:: EOSC Training Profile Elements of "Detailed and Access" block
    :widths: 25 50 10 10 10
    :header-rows: 1
 
@@ -96,7 +96,7 @@ Training
 ########
 
         
-.. list-table:: EOSC Service Profile Elements of "Learning" block
+.. list-table:: EOSC Training Profile Elements of "Learning" block
    :widths: 25 50 10 10 10
    :header-rows: 1
 
@@ -146,7 +146,7 @@ Training
 ########
 
         
-.. list-table:: EOSC Service Profile Elements of "Availability" block
+.. list-table:: EOSC Training Profile Elements of "Availability" block
    :widths: 25 50 10 10 10
    :header-rows: 1
 
@@ -171,7 +171,7 @@ Training
 ########
 
         
-.. list-table:: EOSC Service Profile Elements of "Classification" block
+.. list-table:: EOSC Training Profile Elements of "Classification" block
    :widths: 25 50 10 10 10
    :header-rows: 1
 
@@ -191,7 +191,7 @@ Training
 ########
 
         
-.. list-table:: EOSC Service Profile Elements of "Contact" block
+.. list-table:: EOSC Training Profile Elements of "Contact" block
    :widths: 25 50 10 10 10
    :header-rows: 1
 
