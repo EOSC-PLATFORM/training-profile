@@ -10,20 +10,18 @@
     <xsl:template match="/">
 .. _provider:
 
-The following sections of Provider provide detailed information on the elements.
+The following sections of Training provide detailed information on the elements.
 
-Provider
+Training
 ========
 
         <xsl:call-template name="block1"><xsl:with-param name="blockName" select="'Basic'" /></xsl:call-template>
-        <xsl:call-template name="block2"><xsl:with-param name="blockName" select="'Marketing'" /></xsl:call-template>
-        <xsl:call-template name="block3"><xsl:with-param name="blockName" select="'Classification'" /></xsl:call-template>
-        <xsl:call-template name="block4"><xsl:with-param name="blockName" select="'Location'" /></xsl:call-template>
-        <xsl:call-template name="block5"><xsl:with-param name="blockName" select="'Contact'" /></xsl:call-template>
-        <xsl:call-template name="block6"><xsl:with-param name="blockName" select="'Maturity'" /></xsl:call-template>
-        <xsl:call-template name="block7"><xsl:with-param name="blockName" select="'Dependencies'" /></xsl:call-template>
-        <xsl:call-template name="block8"><xsl:with-param name="blockName" select="'Other'" /></xsl:call-template>
-        <xsl:call-template name="block9"><xsl:with-param name="blockName" select="'Admins'" /></xsl:call-template>
+        <xsl:call-template name="block2"><xsl:with-param name="blockName" select="'Detailed and Access'" /></xsl:call-template>
+        <xsl:call-template name="block3"><xsl:with-param name="blockName" select="'Learning'" /></xsl:call-template>
+        <xsl:call-template name="block4"><xsl:with-param name="blockName" select="'Availability'" /></xsl:call-template>
+        <xsl:call-template name="block5"><xsl:with-param name="blockName" select="'Classification'" /></xsl:call-template>
+        <xsl:call-template name="block6"><xsl:with-param name="blockName" select="'Contact'" /></xsl:call-template>
+   
     </xsl:template>
 
     <xsl:template name="block1">
