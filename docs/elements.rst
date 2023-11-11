@@ -1,236 +1,224 @@
 
-.. _provider:
+.. _service:
 
-The following sections of Provider provide detailed information on the elements.
+The following sections of Training profile provide detailed information on the elements.
 
-Provider
+Training
 ========
 
         
 1. Basic
 ########
 
-.. list-table:: EOSC Provider Profile Elements of "Basic" block
-   :widths: 25 50 10
+        
+.. list-table:: EOSC Service Profile Elements of "Basic" block
+   :widths: 25 50 10 10 10
    :header-rows: 1
 
    * - Element name
      - Description
-     - Mandatory  
+     - Type
+     - Multiplicity
+     - Mandatory
+
+
+   * - id
+     - A persistent identifier, a unique reference to the Resource in the context of the EOSC Portal.
+     - string
+     - 1
+     - N
    * - name
-     - Full Name of the Provider/Organisation offering the resource and acting as main contact point.
+     - Resource Full Name as assigned by the Provider.
+     - string
+     - 1
      - Y
    * - abbreviation
-     - An abbreviation of the Provider Name as assigned by the Provider.
+     - An abbreviation of the Resource Name as assigned by the Provider
+     - string
+     - 1
      - Y
-   * - website
-     - Website with information about the Provider.
+   * - resourceOrganisation
+     - The name (or abbreviation) of the organisation that manages or delivers the resource, or that coordinates resource delivery in a federated scenario.
+     - string
+     - 1
      - Y
-   * - legalEntity
-     - A Y/N question to define whether the Provider is a Legal Entity or not.
-     - Y
-   * - legalStatus
-     - Legal status of the Provider. The legal status is usually noted in the registration act/statutes. For independent legal entities (1) - legal status of the Provider. For embedded providers (2) - legal status of the hosting legal entity. It is also possible to select Not a legal entity. :doc:`Vocabulary <_vocabularies/PROVIDER_LEGAL_STATUS>`.
+   * - resourceProviders
+     - The name(s) (or abbreviation(s)) of Provider(s) that manage or deliver the Resource in federated scenarios.
+     - string
+     - 1
      - N
-   * - hostingLegalEntity
-     - Name of the organisation/institution legally hosting (housing) the provider/research infrastructure or its coordinating centre. A distinction is made between: (1) research infrastructures that are self-standing and have a defined and distinct legal entity, (2) research infrastructures that are embedded into another institution which is a legal entity (such as a university, a research organisation, etc.). If (1) - name of the research infrastructure, If (2) - name of the hosting organisation. :doc:`Vocabulary <_vocabularies/PROVIDER_HOSTING_LEGAL_ENTITY>`.
-     - N
+   * - webpage
+     - Webpage with information about the Resource usually hosted and maintained by the Provider.
+     - anyURI
+     - 1
+     - Y
+2. Detailed and Access
+########
 
-2. Marketing
-############
-
-.. list-table:: EOSC Provider Profile Elements of "Marketing" block
-   :widths: 25 50 10
+        
+.. list-table:: EOSC Service Profile Elements of "Detailed and Access" block
+   :widths: 25 50 10 10 10
    :header-rows: 1
 
    * - Element name
      - Description
-     - Mandatory        
+     - Type
+     - Multiplicity
+     - Mandatory
+
+
    * - description
-     - A high-level description of the Provider in fairly non-technical terms, with the vision, mission, objectives, background, experience.
+     - A high-level description in fairly non-technical terms of a) what the Resource does, functionality it provides and Resources it enables to access, b) the benefit to a user/customer delivered by a Resource; benefits are usually related to alleviating pains (e.g., eliminate undesired outcomes, obstacles or risks) or producing gains (e.g. increased performance, social gains, positive emotions or cost saving), c) list of customers, communities, users, etc. using the Resource.
+     - string
+     - 1
+     - Y
+   * - tagline
+     - Short catch-phrase for marketing and advertising purposes. It will be usually displayed close to the Resource name and should refer to the main value or purpose of the Resource.
+     - string
+     - 1
      - Y
    * - logo
-     - Link to the logo/visual identity of the Provider.
+     - Link to the logo/visual identity of the Resource. The logo will be visible at the Portal. If there is no specific logo for the Resource the logo of the Provider may be used.
+     - anyURI
+     - 1
      - Y
    * - multimedia
      - Link to video, slideshow, photos, screenshots with details of the Provider.
+     - tns:multimediaPair
+     - Multiple
      - N
-
-3. Classification
-#################
-
-.. list-table:: EOSC Provider Profile Elements of "Classification" block
-   :widths: 25 50 10
-   :header-rows: 1
-
-   * - Element name
-     - Description
-     - Mandatory        
-   * - scientificDomains
-     - A named group of providers that offer access to the same type of resource or capabilities. Vocabularies: :doc:`Domain <_vocabularies/SCIENTIFIC_DOMAIN>` / :doc:`Subdomain <_vocabularies/SCIENTIFIC_SUBDOMAIN>`.
+   * - useCases
+     - Link to use cases supported by this Resource.
+     - tns:useCasesPair
+     - 1
      - N
-   * - scientificSubdomain
-     - The subbranch of science, scientific subdicipline that is related to the Resource.
-     - Y
-   * - tags
-     - Keywords associated to the Provider to simplify search by relevant keywords.
-     - N
-   * - structureTypes
-     - Defines the Provider structure type (single-sited, distributed, mobile, virtual, etc.). :doc:`Vocabulary <_vocabularies/PROVIDER_STRUCTURE_TYPE>`.
-     - N
-
-4. Location
-###########
-
-.. list-table:: EOSC Provider Profile Elements of "Location" block
-   :widths: 25 50 10
-   :header-rows: 1
-
-   * - Element name
-     - Description
-     - Mandatory        
-   * - streetNameAndNumber
-     - Street and Number of incorporation or Physical location of the Provider or its coordinating centre in the case of distributed, virtual, and mobile providers.
-     - Y
-   * - postalCode
-     - Postal code of incorporation or Physical location of the Provider or its coordinating centre in the case of distributed, virtual, and mobile providers.
-     - Y
-   * - city
-     - City of incorporation or Physical location of the Provider or its coordinating centre in the case of distributed, virtual, and mobile providers.
-     - Y
-   * - region
-     - Region of incorporation or Physical location of the Provider or its coordinating centre in the case of distributed, virtual, and mobile providers.
-     - N
-   * - country
-     - Country of incorporation or Physical location of the Provider or its coordinating centre in the case of distributed, virtual, and mobile providers.
-     - Y
-
-5. Contact
-##########
-
-.. list-table:: EOSC Provider Profile Elements of "Contact" block - main contact
-   :widths: 25 50 10
-   :header-rows: 1
-
-   * - Element name
-     - Description
-     - Mandatory        
-   * - mainContact
-     - Provider's main contact info.
-     - Y
-   * - firstName
-     - First Name of the Provider's main contact person/Provider manager.
-     - Y
-   * - lastName
-     - Last Name of the Provider's main contact person/Provider manager.
-     - N
-   * - email
-     - Email of the Provider's main contact person/Provider manager.
-     - Y
-   * - phone
-     - Phone of the Provider's main contact person/Provider manager.
-     - N
-   * - position
-     - Position of the Provider's main contact person/Provider manager.
-     - N
-
-.. list-table:: EOSC Provider Profile Elements of "Contact" block - public contact
-   :widths: 25 50 10
-   :header-rows: 1
-
-   * - Element name
-     - Description
-     - Mandatory        
-   * - publicContacts
-     - List of the Provider's public contacts info.
-     - Y
-   * - firstName
-     - First Name of the Provider's main contact person/Provider manager.
-     - N
-   * - lastName
-     - Last Name of the Provider's main contact person/Provider manager.
-     - N
-   * - email
-     - Email of the Provider's main contact person/Provider manager.
-     - Y
-   * - phone
-     - Phone of the Provider's main contact person/Provider manager.
-     - N
-   * - position
-     - Position of the Provider's main contact person/Provider manager.
-     - N
-
-6. Maturity
-###########
-
-.. list-table:: EOSC Provider Profile Elements of "Maturity" block
-   :widths: 25 50 10
-   :header-rows: 1
-
-   * - Element name
-     - Description
-     - Mandatory        
-   * - lifeCycleStatus
-     - Current status of the Provider life-cycle. :doc:`Vocabulary <_vocabularies/PROVIDER_LIFE_CYCLE_STATUS>`.
-     - N
-   * - certifications
-     - List of certifications obtained for the Provider (including the certification body, the certificate number or URL if available).
-     - N
-
-7. Dependencies
-###############
-
-.. list-table:: EOSC Provider Profile Elements of "Dependencies" block
-   :widths: 25 50 10
-   :header-rows: 1
-
-   * - Element name
-     - Description
-     - Mandatory        
-   * - participatingCountries
-     - Providers/Research Infrastructures that are funded by several countries should list here all supporting countries (including the Coordinating country).
-     - N
-   * - affiliations
-     - Providers that are members or affiliated or associated with other organisations should list those organisations here.
-     - N
-   * - networks
-     - Providers that are members of networks should list those networks here. :doc:`Vocabulary <_vocabularies/PROVIDER_NETWORK>`.
-     - N
-   * - catalogueId
-     - The Catalogue this Provider is originally registered at.
-     - N
-
-8. Other
+3. Learning
 ########
 
-.. list-table:: EOSC Provider Profile Elements of "Other" block
-   :widths: 25 50 10
+        
+.. list-table:: EOSC Service Profile Elements of "Learning" block
+   :widths: 25 50 10 10 10
    :header-rows: 1
 
    * - Element name
      - Description
-     - Mandatory        
-   * - esfriDomains
-     - ESFRI domain classification. :doc:`Vocabulary <_vocabularies/PROVIDER_ESFRI_DOMAIN>`.
-     - N
-   * - esfriType
-     - If the research infrastructure is (part of) an ESFRI project indicate how the RI participates: a) is a node of an ESFRI project, b) is an ESFRI project, c) is an ESFRI landmark, d) is not an ESFRI project or landmark. :doc:`Vocabulary <_vocabularies/PROVIDER_ESFRI_TYPE>`.
-     - N
-   * - merilScientificDomains
-     - MERIL scientific domain / subdomain classification. Vocabularies: :doc:`Domain <_vocabularies/PROVIDER_MERIL_SCIENTIFIC_DOMAIN>` / :doc:`Subdomain <_vocabularies/PROVIDER_MERIL_SCIENTIFIC_SUBDOMAIN>`.
-     - N
-   * - areasOfActivity
-     - Basic research, Applied research or Technological development. :doc:`Vocabulary <_vocabularies/PROVIDER_AREA_OF_ACTIVITY>`.
-     - N
-   * - societalGrandChallenges
-     - Provider’s participation in the Grand Societal Challenges defined by the European Commission. :doc:`Vocabulary <_vocabularies/PROVIDER_SOCIETAL_GRAND_CHALLENGE>`.
-     - N
-   * - nationalRoadmaps
-     - Provider's participation in a national roadmap.
-     - N
+     - Type
+     - Multiplicity
+     - Mandatory
 
-9. Admins
-#########
 
-no declaration in XSD schema
+   * - scientificDomains
+     - The branch of science, scientific discipline that is related to the Resource.
+     - tns:serviceProviderDomain Vocabularies: :doc:`Domain <_vocabularies/SCIENTIFIC_DOMAIN>` / :doc:`Subdomain <_vocabularies/SCIENTIFIC_SUBDOMAIN>`.
+     - 1
+     - Y
+   * - categories
+     - A named group of Resources that offer access to the same type of Resources.
+     - tns:serviceCategory :doc:`Vocabulary <_vocabularies/CATEGORY>`.
+     - 1
+     - Y
+   * - category
+     - 
+     - tns:serviceCategory
+     - Multiple
+     - N
+   * - targetUsers
+     - Type of users/customers that commissions a Provider to deliver a Resource.
+     - string :doc:`Vocabulary <_vocabularies/TARGET_USER>`.
+     - 1
+     - Y
+   * - accessTypes
+     - The way a user can access the service/resource (Remote, Physical, Virtual, etc.).
+     - string :doc:`Vocabulary <_vocabularies/ACCESS_TYPE>`.
+     - 1
+     - N
+   * - accessModes
+     - Eligibility/criteria for granting access to users (excellence-based, free-conditionally, free etc.).
+     - string :doc:`Vocabulary <_vocabularies/ACCESS_MODE>`.
+     - 1
+     - N
+   * - tags
+     - Keywords associated to the Resource to simplify search by relevant keywords.
+     - string
+     - 1
+     - N
+4. Availability
+########
+
         
+.. list-table:: EOSC Service Profile Elements of "Availability" block
+   :widths: 25 50 10 10 10
+   :header-rows: 1
+
+   * - Element name
+     - Description
+     - Type
+     - Multiplicity
+     - Mandatory
+
+
+   * - geographicalAvailabilities
+     - Locations where the Resource is offered.
+     - string
+     - 1
+     - Y
+   * - languageAvailabilities
+     - Languages of the (user interface of the) Resource.
+     - string
+     - 1
+     - Y
+5. Classification
+########
+
+        
+.. list-table:: EOSC Service Profile Elements of "Classification" block
+   :widths: 25 50 10 10 10
+   :header-rows: 1
+
+   * - Element name
+     - Description
+     - Type
+     - Multiplicity
+     - Mandatory
+
+
+   * - resourceGeographicLocations
+     - List of geographic locations where data, samples, etc. are stored and processed.
+     - string
+     - 1
+     - N
+6. Contact
+########
+
+        
+.. list-table:: EOSC Service Profile Elements of "Contact" block
+   :widths: 25 50 10 10 10
+   :header-rows: 1
+
+   * - Element name
+     - Description
+     - Type
+     - Multiplicity
+     - Mandatory
+
+
+   * - mainContact
+     - Service's Main Contact/Resource Owner info.
+     - tns:serviceMainContact
+     - 1
+     - Y
+   * - publicContacts
+     - List of the Service's Public Contacts info.
+     - tns:servicePublicContact
+     - 1
+     - Y
+   * - helpdeskEmail
+     - The email to ask more information from the Provider about this Resource.
+     - string
+     - 1
+     - Y
+   * - securityContactEmail
+     - The email to contact the Provider for critical security issues about this Resource.
+     - string
+     - 1
+     - Y
