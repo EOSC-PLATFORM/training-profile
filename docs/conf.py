@@ -25,7 +25,7 @@ if not on_rtd:
 
 # -- Project information -----------------------------------------------------
 
-project = 'EOSC - Provider PROFILE'
+project = 'EOSC - Training PROFILE'
 copyright = '2022-2023, EOSC'
 author = 'EOSC metadata schema profile team'
 
