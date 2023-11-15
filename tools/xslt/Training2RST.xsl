@@ -48,10 +48,10 @@ Training
         <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'description'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'tagline'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'logo'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'multimedia'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'useCases'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'keywords'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'license'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'accessRights'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'versionDate'" /></xsl:call-template>
     </xsl:template>
 
 <xsl:template name="block3">
@@ -61,13 +61,13 @@ Training
 
         <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'scientificDomains'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'categories'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'category'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'targetUsers'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'accessTypes'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'accessModes'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'tags'" /></xsl:call-template>
+	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'targetGroups'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'learningResourceTypes'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'learningOutcomes'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'expertiseLevel'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'contentResourceTypes'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'qualifications'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'duration'" /></xsl:call-template>
     </xsl:template>
 
 <xsl:template name="block4">

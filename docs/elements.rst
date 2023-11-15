@@ -77,24 +77,24 @@ Training
      - string
      - 1
      - N
-   * - 
-     - 
-     - 
+   * - keywords
+     - The keyword(s) or tag(s) used to describe the resource.
+     - string
+     - 1
+     - N
+   * - license
+     - A license document that applies to this content, typically indicated by URL.
+     - string
      - 1
      - Y
-   * - 
-     - 
-     - 
+   * - accessRights
+     - The access status of a resource (open, restricted, paid).
+     - string
      - 1
      - Y
-   * - 
-     - 
-     - 
-     - 1
-     - Y
-   * - 
-     - 
-     - 
+   * - versionDate
+     - The version date for the most recently published or broadcast resource.
+     - dateTime
      - 1
      - Y
 3. Learning
@@ -112,41 +112,41 @@ Training
      - Mandatory
 
 
-   * - scientificDomains
-     - The branch of science, scientific discipline that is related to the Resource.
-     - tns:serviceProviderDomain Vocabularies: :doc:`Domain <_vocabularies/SCIENTIFIC_DOMAIN>` / :doc:`Subdomain <_vocabularies/SCIENTIFIC_SUBDOMAIN>`.
+   * - targetGroups
+     - The principal users(s) for which the learning resource was designed.
+     - string
      - 1
      - Y
-   * - 
-     - 
-     -  :doc:`Vocabulary <_vocabularies/CATEGORY>`.
+   * - learningResourceTypes
+     - The predominant type or kind that characterizes the learning resource.
+     - string
+     - 1
+     - N
+   * - learningOutcomes
+     - The descriptions of what knowledge, skills or abilities students should acquire on completion of the resource.
+     - string
      - 1
      - Y
-   * - 
-     - 
-     - 
+   * - expertiseLevel
+     - Target skill level in the topic being taught.
+     - string
      - 1
      - Y
-   * - 
-     - 
-     -  :doc:`Vocabulary <_vocabularies/TARGET_USER>`.
+   * - contentResourceTypes
+     - The predominant content type of the learning resource (video, game, diagram, slides, etc.).
+     - string
      - 1
-     - Y
-   * - 
-     - 
-     -  :doc:`Vocabulary <_vocabularies/ACCESS_TYPE>`.
+     - N
+   * - qualifications
+     - Identification of certification, accreditation or badge obtained with course or learning resource.
+     - string
      - 1
-     - Y
-   * - 
-     - 
-     -  :doc:`Vocabulary <_vocabularies/ACCESS_MODE>`.
+     - N
+   * - duration
+     - Approximate or typical time it takes to work with or through the learning resource for the typical intended target audience.
+     - string
      - 1
-     - Y
-   * - 
-     - 
-     - 
-     - 1
-     - Y
+     - N
 4. Availability
 ########
 
