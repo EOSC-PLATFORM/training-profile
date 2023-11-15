@@ -162,14 +162,14 @@ Training
      - Mandatory
 
 
-   * - geographicalAvailabilities
-     - Locations where the Resource is offered.
+   * - languages
+     - The language in which the resource was originally published or made available.
      - string
      - 1
      - Y
-   * - 
-     - 
-     - 
+   * - geographicalAvailabilities
+     - Locations where the Resource is offered.
+     - string
      - 1
      - Y
 5. Classification
@@ -187,6 +187,11 @@ Training
      - Mandatory
 
 
+   * - scientificDomains
+     - The branch of science, scientific discipline that is related to the Resource.
+     - tns:serviceProviderDomain Vocabularies: :doc:`Domain <_vocabularies/SCIENTIFIC_DOMAIN>` / :doc:`Subdomain <_vocabularies/SCIENTIFIC_SUBDOMAIN>`.
+     - 1
+     - Y
    * - 
      - 
      - 

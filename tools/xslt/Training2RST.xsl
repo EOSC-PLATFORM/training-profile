@@ -77,8 +77,9 @@ Training
 
         <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'languages'" /></xsl:call-template>
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'geographicalAvailabilities'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'languageAvailabilities'" /></xsl:call-template>
+
     </xsl:template>
 
 <xsl:template name="block5">
@@ -88,7 +89,8 @@ Training
 
         <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'resourceGeographicLocations'" /></xsl:call-template>
+	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'scientificDomains'" /></xsl:call-template>
+	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'scientificSubdomains'" /></xsl:call-template>
     </xsl:template>
 
 <xsl:template name="block6">
