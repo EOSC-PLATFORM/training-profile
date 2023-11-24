@@ -192,11 +192,6 @@ Training
      - tns:serviceProviderDomain Vocabularies: :doc:`Domain <_vocabularies/SCIENTIFIC_DOMAIN>` / :doc:`Subdomain <_vocabularies/SCIENTIFIC_SUBDOMAIN>`.
      - 1
      - Y
-   * - 
-     - 
-     - 
-     - 1
-     - Y
 6. Contact
 ########
 
@@ -212,23 +207,33 @@ Training
      - Mandatory
 
 
-   * - 
-     - 
-     - 
+   * - firstName
+     - First Name of the Resource's main contact person/manager.
+     - string
      - 1
      - Y
-   * - 
-     - 
-     - 
+   * - lastName
+     - Last Name of the Resource's main contact person/manager.
+     - string
      - 1
      - Y
-   * - 
-     - 
-     - 
+   * - email
+     - Email of the Resource's main contact person/manager.
+     - string
      - 1
      - Y
-   * - 
-     - 
-     - 
+   * - phone
+     - Telephone of the Resource's main contact person/manager.
+     - string
      - 1
-     - Y
+     - N
+   * - position
+     - Position of the Resource's main contact person/manager.
+     - string
+     - 1
+     - N
+   * - organisation
+     - The organisation to which the contact is affiliated.
+     - string
+     - 1
+     - N

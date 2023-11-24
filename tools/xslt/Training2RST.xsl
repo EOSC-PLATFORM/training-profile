@@ -90,7 +90,6 @@ Training
         <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'scientificDomains'" /></xsl:call-template>
-	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'scientificSubdomains'" /></xsl:call-template>
     </xsl:template>
 
 <xsl:template name="block6">
@@ -101,10 +100,12 @@ Training
         <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
         <!--xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'serviceMainContact'" /></xsl:call-template-->
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'mainContact'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'publicContacts'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'helpdeskEmail'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'securityContactEmail'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'serviceMainContact'" /><xsl:with-param name="keyName" select="'firstName'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'serviceMainContact'" /><xsl:with-param name="keyName" select="'lastName'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'serviceMainContact'" /><xsl:with-param name="keyName" select="'email'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'serviceMainContact'" /><xsl:with-param name="keyName" select="'phone'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'serviceMainContact'" /><xsl:with-param name="keyName" select="'position'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'serviceMainContact'" /><xsl:with-param name="keyName" select="'organisation'" /></xsl:call-template>
 
 
     </xsl:template>
