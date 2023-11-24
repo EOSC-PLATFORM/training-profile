@@ -90,6 +90,8 @@ Training
         <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'trainingResource'" /><xsl:with-param name="keyName" select="'scientificDomains'" /></xsl:call-template>
+	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'serviceProviderDomain'" /><xsl:with-param name="keyName" select="'scientificDomain'" /></xsl:call-template>
+	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'serviceProviderDomain'" /><xsl:with-param name="keyName" select="'scientificSubdomain'" /></xsl:call-template>
     </xsl:template>
 
 <xsl:template name="block6">

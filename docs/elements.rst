@@ -192,6 +192,16 @@ Training
      - tns:serviceProviderDomain Vocabularies: :doc:`Domain <_vocabularies/SCIENTIFIC_DOMAIN>` / :doc:`Subdomain <_vocabularies/SCIENTIFIC_SUBDOMAIN>`.
      - 1
      - Y
+   * - scientificDomain
+     - The branch of science, scientific discipline that is related to the Resource.
+     - string
+     - 1
+     - Y
+   * - scientificSubdomain
+     - The subbranch of science, scientific subdicipline that is related to the Resource.
+     - string
+     - 1
+     - Y
 6. Contact
 ########
 
